@@ -1,0 +1,110 @@
+@import "../../base/_config";
+
+.services {
+    background-color:#fff;
+    color:$logo--blue--dark;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-content: center;
+    .section-label {
+        z-index: 2;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:80%;
+        justify-self:center;
+        h1 {
+            z-index: 3;
+            color: inherit;
+            text-align: inherit;
+            font-size:10vw;
+
+        }
+        p {
+            z-index: 3;
+            color: inherit;
+            text-align: inherit;
+            padding:10vh 0;
+            font-size: 1.2vw;
+            line-height: 1.7em;
+        }
+        .button {
+            z-index: 3;
+            color: inherit;
+        }
+    }
+    .bkg-color-block {
+        background-color:$pink--light;
+        position: absolute;
+        left:0;
+        bottom:0;
+        height:60%;
+        width: 100%;
+        z-index: 1;
+    }
+    .confetti {
+        z-index: 2;
+        position: absolute;
+        left:0;
+        top:0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        img {
+            position: absolute;
+            left:50%;
+            top:50%;
+        }
+        .confetti-1 {
+            width: 60px;
+            left: 1%;
+            bottom: 1%;
+            top: auto;
+        }
+        //yellow
+        .confetti-2 {
+            width:100px;
+            left:-5%;
+            top:-5%;            
+        }
+        .confetti-3 {
+            width: 48px;
+            top: -3%;
+            right: 48%;
+            left: auto;
+        }
+        .confetti-4 {
+            width: 70px;
+            top: auto;
+            bottom: -13%;
+            left: 30%;
+        }
+        .confetti-5 {
+            width: 50px;
+            right: -1%;
+            bottom: 0%;
+            left: auto;
+            top: auto;
+        }   
+        .confetti-6 {
+            width: 45px;
+            right: -2%;
+            top: 20%;
+            left: auto;
+        }    
+        .confetti-7 {
+            right: -1%;
+            width: 43px;
+            top: 21%;
+            left: auto;
+        }
+    }
+    &.is-admin {
+     
+    }
+}

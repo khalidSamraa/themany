@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*
+Theme Name: The Many Theme
+Theme URI: http://themany.com
+Description: The Many Custom Theme
+Version: 1.0
+Author: DaveVSDave
+Author URI: http://davevsdave.com
+*/
+
+// Base
+@import "base/_reset";
+@import "base/_config";
+@import "base/_fonts";
+@import "base/_functions";
+@import "base/_text";
+
+
+// Modules
+@import "modules/_base-layout";
+@import "modules/_main-menu";
+@import "modules/_buttons";
+@import "modules/_wp-core";
+
+//general block styling
+@import "modules/all/blockbase";
+
+//Home Page Modules
+@import "modules/home/awards";
+@import "modules/home/culture";
+@import "modules/home/feature";
+@import "modules/home/services";
+@import "modules/home/news";
+@import "modules/home/quote";
+@import "modules/home/work";
+
+
+// Pages
+@import "pages/_homepage";
+@import "pages/_error-404";
+

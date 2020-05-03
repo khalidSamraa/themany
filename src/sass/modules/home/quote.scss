@@ -1,0 +1,43 @@
+@import "../../base/_config";
+
+.quote {  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    blockquote {
+        width:80%;
+        height: auto;
+        color:$blue--dark;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        span {
+            line-height: 1;
+        }
+        .testimonial-tag {
+            font-family: $font-family--primary ;
+            color:inherit;
+            text-align: inherit;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size:.6em;
+            letter-spacing: .08em;
+            svg {
+                width: 8px;
+                height: auto;
+                fill:$blue--dark;
+                
+            }
+        }
+        .testimonial-quote {
+            font-family: $font-family--headline ;
+            color:inherit;
+            text-align: inherit;
+            font-size:3.5vw;
+        }
+    }
+    &.is-admin {
+
+    }
+}

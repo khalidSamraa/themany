@@ -1,0 +1,121 @@
+@import "../../base/_config";
+
+.awards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .container {
+        text-align: center;
+        width:80%;
+        height: auto;
+        z-index: 3;
+        h2 {
+            color:$pink--light;
+            text-align: inherit;
+            font-size:4em;
+            margin-bottom:10px;
+        }
+        ul {
+            padding-bottom:5vh;
+            li {
+                list-style: none;
+                font-size:1.1em;
+                color:$white;
+                line-height: 1.5em;
+                text-align: inherit;
+                font-family: $font-family--primary;
+            }
+        }
+        h3 {
+            font-size:2.5em;
+            color:$pink--light;
+            text-align: inherit;
+            font-family: $font-family--headline;
+            margin-bottom:10px;
+        }
+        p {
+            font-size:1em;
+            color:$white;
+            text-align: inherit;
+            line-height: 1.25em;
+        }
+
+    }
+    .noise-background {
+
+        .color {
+
+            background-color:$green;
+
+        }
+
+    }    
+   .confetti {
+        z-index: 2;
+        position: absolute;
+        left:0;
+        top:0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        img {
+            position: absolute;
+            left:50%;
+            top:50%;
+        }
+        .confetti-1 {
+            width: 60px;
+            left: 1%;
+            bottom: 1%;
+            top: auto;
+        }
+        //yellow
+        .confetti-2 {
+            width:100px;
+            left:-5%;
+            top:-5%;            
+        }
+        .confetti-3 {
+            width: 48px;
+            top: -3%;
+            right: 48%;
+            left: auto;
+        }
+        .confetti-4 {
+            width: 70px;
+            top: auto;
+            bottom: -13%;
+            left: 30%;
+        }
+        .confetti-5 {
+            width: 50px;
+            right: -2%;
+            bottom: 0%;
+            left: auto;
+            top: auto;
+        }   
+        .confetti-6 {
+            width: 45px;
+            right: -2%;
+            top: 20%;
+            left: auto;
+        }    
+        .confetti-7 {
+            right: -1%;
+            width: 43px;
+            top: 21%;
+            left: auto;
+        }
+    }
+    
+    // Fix selectable bug.
+    &.is-admin {
+        &:before {
+            
+
+        
+        }
+    }
+    
+}

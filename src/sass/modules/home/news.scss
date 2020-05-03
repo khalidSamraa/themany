@@ -1,0 +1,40 @@
+@import "../../base/_config";
+
+.news {
+    .slider {
+        .slide {
+            a:link {
+                container {
+                    img {
+
+                    }
+                    h1 {
+
+                    }
+                    p {
+
+                    }
+                    .news-label {
+                        p {
+
+                        }
+                        hr {
+
+                        }
+                    }
+                }
+                
+            }
+        } 
+    }
+    // Fix selectable bug.
+    &.is-admin {
+        &:before {
+
+        }
+    }
+    video.reel {
+
+    }
+
+}

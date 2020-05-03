@@ -1,0 +1,36 @@
+
+/***************************************/
+/******* TOP LEFT DASH ICON ************/
+
+.wp-admin #wpadminbar #wp-admin-bar-site-name>.ab-item:before {
+    content: "\f527" !important;
+}
+.dashicons-dashboard:before {
+    content: "\f116" !important;
+}
+@media only screen and (min-width: 782px ) {
+
+    .edit-post-layout__content {
+        /*resize: horizontal;*/
+        width:calc(65% - 160px);
+
+    }
+    .edit-post-sidebar .handle {
+        position: absolute;
+        display: block;
+        background-color:#000;
+        width:10px;
+        height:50px;
+        top:50%;
+        left:-5px;
+        transform:translateY(-50%);
+        cursor: col-resize;
+        z-index: 2;
+
+    }
+    .edit-post-sidebar, .edit-post-layout.is-sidebar-opened .edit-post-sidebar {
+        /*resize: horizontal;*/
+        /* width:35%; */
+    }
+    
+}

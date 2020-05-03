@@ -1,0 +1,80 @@
+// Fonts
+$font-family--primary       : 'IBM Plex Sans', sans-serif;
+$font-family--headline      : 'DM Serif Display', serif;
+
+$font-size--primary         : 16px;
+
+// Logo Colors
+$logo--red                  : #F05347;
+$logo--blue--dark           : #18315C;
+$logo--blue                 : #24CCFF;
+$logo--yellow               : #FFE133;
+
+// Brand Colors
+$red                        : #EF5347;
+$red--dark                  : #CC443E;
+$red--light                 : #EAC5C5;
+
+$yellow                     : #FFDF32;
+$yellow--dark               : #E8B031;
+$yellow--light              : #FAF8EE;
+
+$blue                       : #7AD1F6;
+$blue--dark                 : #5797AD;
+$blue--light                : #A8C4C8;
+
+$green                      : #35A56F;
+$green--dark                : #208450;
+$green--light               : #A5E1D5;
+
+$pink                       : #EDB2C6;
+$pink--dark                 : #C695A3;
+$pink--light                : #FCDEF0; //possibly FBE1EB --> from home page
+
+
+//Other Colors
+$white                      : #fff;
+$white--off                 : #F6F6F6;
+
+$font-color--primary        : $white;
+$font-color--secondary      : $logo--blue--dark;
+
+$border-color--primary      : #DCDCDC;
+
+// Transitions
+$transition--primary        : all 0.3s ease;
+$transition--secondary      : all 0.4s cubic-bezier(0.2, 1, 0.3, 1);
+$transition-fast            : all 0.2s ease;
+$transition-slow            : all 1s ease;
+
+// Responsive
+$phone-small                : 320px;
+$phone-medium               : 480px;
+$phone-large                : 512px;
+$instagram                  : 645px;
+$tablet                     : 768px;
+$desktop-small              : 1024px;
+$desktop-medium             : 1280px;
+$desktop-large              : 1440px;
+$mobile                     : $desktop-small;
+
+// General dimensions and spacing
+$spacing--xxs               : 5px;
+$spacing--xs                : 10px;
+$spacing--s                 : 15px;
+$spacing--m                 : 20px;
+$spacing--l                 : 24px;
+$spacing--xl                : 30px;
+$spacing--xxl               : 45px;
+$max-width                  : $desktop-medium;
+$nav-menu-height            : 80px;
+
+
+// Z-index
+$z-below-bottom             : -1;
+$z-bottom                   : 0;
+$z-middle-bottom            : 5;
+$z-middle                   : 10;
+$z-middle-top               : 15;
+$z-top                      : 1000;
+$z-above-top                : 1005;

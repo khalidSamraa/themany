@@ -1,0 +1,80 @@
+@import "../../base/_config";
+
+.work {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .container {
+        z-index: 3;
+        width:80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 8vh;
+        align-items: flex-start;
+        .text-container {
+            width:50%;
+            text-align: left;
+            height: auto;
+            h1 {
+                text-align: inherit;
+                z-index: 3;
+                font-size: 4.5em;
+                line-height: 1em;
+                padding-bottom: 10px;
+            }
+            p {
+                text-align: inherit;
+                z-index: 3;
+                font-size: .6em;
+                line-height: 1.5em;
+
+            }
+            p.tag {
+                text-align: inherit;
+                z-index: 3;
+                font-size: .6em;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: .08em;
+            }            
+        }
+
+    }
+    .container.align-right {
+        align-items: flex-end;
+        .text-container {
+        }
+        
+    }
+    .background-image {
+        width:100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        left:0;
+        top:0;
+        z-index: 1;
+    }
+    .image-overlay {
+        position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height: 100%;
+        background-color:#000;
+        opacity: 0;
+        z-index: 2;
+    }
+    .mobile {
+        display: none;
+    }
+    // Fix selectable bug.
+    &.is-admin {
+        &:before {
+
+        }
+    }
+}
+

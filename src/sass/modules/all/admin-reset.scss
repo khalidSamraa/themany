@@ -1,0 +1,79 @@
+//this stylesheet only loads on admin
+@import "../../base/_config";
+@import "../all/blockbase";
+@import "../home/awards";
+@import "../home/culture";
+@import "../home/feature";
+@import "../home/news";
+@import "../home/quote";
+@import "../home/work";
+@import "../home/services";
+
+
+.acf-block-preview {
+    section {
+        width:100%;
+        height: auto;
+        min-height: 600px;
+        .section-label {
+
+            p {
+                font-size: .6em;
+                line-height: 25px;
+
+            }
+            hr {
+                
+
+            }            
+        }
+        h1, h2, h3, h4, h5, p {
+            margin:0;
+            line-height: 1;
+            font-size: 1em;
+            -webkit-text-stroke:0;
+        }
+        ul {
+            padding:0;
+            margin:0;
+        }
+        blockquote {
+            margin:0;
+        }
+        .button {
+            font-size:1em;
+            text-decoration: underline;
+            min-height: auto;
+            border:none;
+            background-color: transparent;
+            padding:0;
+            border-radius: 0;
+            line-height: 1;
+        }
+        .slider {
+            .slide {
+                .container {
+                    height: auto;
+                }
+            }
+        }
+        @import "../../base/_text";
+        @import "../../modules/_buttons";
+        h1, h2, h3, h4, h5, p {
+
+            -webkit-text-stroke:0;
+        }
+    }
+    .feature {
+        min-height: unset;
+    }
+    .services {
+        .section-label {
+        }
+        .container {
+            h1 {
+                font-size:5vw;
+            }
+        }
+    }
+}

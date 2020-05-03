@@ -1,0 +1,82 @@
+@import "../../base/_config";
+
+.culture {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .container {
+        text-align: center;
+        width:80%;
+        height: auto;
+        z-index: 3;
+        h2, h3 {
+            color:$white;
+            text-align: inherit;
+            font-size:5vw;
+            text-shadow: 0 0 20px rgba(0,0,0,.2);
+        }
+        h3 {
+            font-size: 1.8vw;
+            padding-top:20px;
+            text-shadow: none;
+            font-family: $font-family--headline;
+        }
+        
+        p {
+            font-size:1em;
+            color:$white;
+            text-align: inherit;
+            line-height: 1.25em;
+            padding:50px 0 30px 0;
+        }
+        .earth {
+            position: absolute;
+            left:50%;
+            top:5%;
+            width:300px;
+            height: auto;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        .astronaut {
+            position: absolute;
+            right:0;
+            top:0;
+            width: 150px;
+            height: auto;
+            right: auto;
+            left: 74%;
+            z-index: -1;
+            top: 7%;
+        }
+
+    }
+    .side-accent {
+        position: absolute;
+        right:0;
+        bottom:0;
+        height: 50%;
+        width:15px;
+        background-color:$red--dark;
+        z-index: 2;
+    }
+    .noise-background {
+
+        .color {
+
+            background-color:$yellow--dark;
+ 
+        }
+
+    }    
+    
+    // Fix selectable bug.
+    &.is-admin {
+        &:before {
+            
+
+        
+        }
+    }   
+}

@@ -1,0 +1,60 @@
+@import "../../base/_config";
+
+section {
+    width:100%;
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+    overflow: hidden;
+    
+    .section-label {
+        left:5%;
+        top:50%;
+        transform:translate(-50%,-50%);
+        position: absolute;
+        height:60%;
+        width: 25px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        z-index: 10;
+        p {
+            writing-mode: vertical-rl;
+            font-family: $font-family--primary;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size:.75vw;
+            letter-spacing: .2em;
+            line-height: 25px;
+        }
+        hr {
+            background-color:$white;
+            width:1px;
+            height: 40px;
+            border:none;
+            outline: none;
+
+        }            
+    }
+    .noise-background {
+        position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        .color {
+            position: absolute;
+            width:100%;
+            height: 100%;
+            top:0;
+            left:0;
+            mix-blend-mode: overlay;
+            z-index: 2;
+        }
+
+    }
+}
